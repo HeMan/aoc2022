@@ -1,2 +1,3 @@
-idf_component_register(SRCS "day02.cpp"
-                    INCLUDE_DIRS ".")
+idf_component_register(SRCS "today.cpp"
+                    INCLUDE_DIRS "."
+										REQUIRES "getinput")
