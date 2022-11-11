@@ -1,14 +1,20 @@
 #include <iostream>
 #include <thread>
-
-using std::cout;
-using std::endl;
+#include <vector>
+#include "getinput.h"
 
 extern "C" void app_main(void)
 {
+	std::vector<std::string> inputlines;
+	inputlines = getlines();
 	while (true) {
 
-		cout << "Hello world day 01" << endl;
+		for (auto l: inputlines) {
+			std::cout << l << std::endl;
+		}
+		std::cout << inputlines.size() << std::endl;
+
+		std::cout << "Hello world day 01" << std::endl;
 		std::this_thread::sleep_for(std::chrono::seconds(1));
 	}
 }
