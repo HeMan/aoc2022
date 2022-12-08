@@ -20,11 +20,11 @@ uint16_t nwaycompare(string in, uint16_t s)
 
 extern "C" void app_main(void)
 {
-	const vector<string> inputlines = getlines();
-	const string firstline = inputlines.front();
-	while (true) {
-		cout << "Part 1: " << nwaycompare(firstline, 4) << endl;
-		cout << "Part 2: " << nwaycompare(firstline, 14) << endl;
-		this_thread::sleep_for(chrono::seconds(1));
-	}
+    const vector<string> inputlines = getlines();
+    const string firstline = inputlines.front();
+    while (true) {
+        cout << "Part 1: " << nwaycompare(firstline, 4) << endl;
+        cout << "Part 2: " << nwaycompare(firstline, 14) << endl;
+        this_thread::sleep_for(chrono::seconds(1));
+    }
 }
